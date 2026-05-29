@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "functions": {
+    "api/code.js": {
+      "maxDuration": 30
+    }
+  },
+  "routes": [
+    { "src": "/code", "dest": "/api/code.js" },
+    { "src": "/(.*)", "dest": "/public/$1" }
+  ]
+}
